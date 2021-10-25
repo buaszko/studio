@@ -1,3 +1,15 @@
+/* Global */
+
+
+body {
+    margin: 0;
+    text-align: center;
+    color: %fff;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
 /* Navigation*/
 
 .navigation {
@@ -18,8 +30,8 @@
   .container-menu {
     position: absolute;
     margin-left: 40%;
-    margin-top: 25px;
-    width: 100%;
+    margin-top: 65px;
+    width: auto;
   }
 
   .container-menu a:hover {
@@ -32,10 +44,9 @@
     color: #fed136;
     font-family: 'Great Vibes', cursive;
     position: absolute;
-    width: 100%;
     overflow: hidden;
-    margin-left: 15%;
-    margin-top: 25px;
+    margin-left: -20%;
+    margin-top: 55px;
     font-size: 30px;
     
   }
@@ -43,7 +54,7 @@
     min-height: 500px;
     display: flex;
     background-image: url("https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1174&q=80");
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -51,12 +62,12 @@
    
   .splash .splash-inner {
     margin: auto;
-    max-width: 100%; 
+    max-width: auto; 
   }
   
   .splash .splash-inner .page-subtitle {
     padding: 0;
-    text-align: center;
+
     font-weight: 900;
     font-family: 'Work Sans', sans-serif;
     color: #fff;
@@ -65,7 +76,7 @@
   
   .splash .splash-inner .page-title {
     padding: 20px;
-    text-align: center;
+
     color: #fff;
     font-size: 44px;
     font-style: italic;
@@ -75,9 +86,52 @@
   /* Buttons */
 
   .btn {
-    margin-left: 40%;
     margin-top: 25px;
     color: #fff;
     background: #fed136;
     padding: 20px 45px;
   }
+
+  /* Services */
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  
+  .text-box {
+    padding-bottom: -100%;
+    position: relative;
+    flex: 0 0 31%; }
+    .text-box.text-box p:first-of-type {
+      font-weight: bold; 
+  }
+  
+  .wrapper p {
+    font-weight: lighter;
+    font-size: 16px;
+    color: grey;
+
+  }
+  .wrapper h3 {
+
+    padding-top: 20px;
+  }
+
+  .wrapper i {
+    font-size: 50px;
+    color: #fed136;
+    border: 5px solid #fed136;
+    background-color: #fff;
+    height: 100px;
+    -moz-border-radius:50px;
+    -webkit-border-radius: 50px;
+    width: 100px;
+    padding-top: 20px;
+
+  }
+    
