@@ -1,294 +1,326 @@
-/* Variables */
- $color-one: #ffffff;
- $color-two: #fed136;
- $color-three: #777777;
- $color-four: #272727;
- $color-five: #F7F7F7;
- $font-one: 'Montserrat', sans-serif;
- $font-two: 'PT Serif', serif;
- $font-three: 'Roboto Slab', serif; 
+$font-logo: 'Carattere', cursive;
+$textfont-one: 'Merriweather', serif;
+$navfont: 'Roboto', sans-serif;
+$textfont-two: 'Roboto Mono', monospace;
 
 
-*, *::before, *::after {
-	box-sizing: border-box;
-}
+$color-primary: #FED136;
+$color-font-one: #FFF;
+$color-background-main: #eff2f5;
+$color-background: #7F7978;
+$color-font-two: #111;
 
 /* Global */
 
-.body {
-    margin: 0;
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.7;
+
+body {
+  margin: 0;
 }
 
-.container-menu {
-    max-width: 1140px;
-    padding: 0 10px;
-    margin: 0 auto;
-    position: absolute;
-    margin-left: 40%;
-    margin-top: 65px;
-    width: auto;
+p {
+  color: $color-background-main;
 }
 
-/* Navigation*/
+.padding-x {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+/* Navigation */
 
 .navigation {
-    padding: 0px 0; 
-  }
-  
-  .navigation ul li {
-    display: inline-block;
-    margin: 0 20px 0;
-    position: relative;
-    list-style: none;
-  }
-
-.navigation ul li a {
-    color: $color-one;
-    position: center;
-    text-decoration: none;
-
-  }
-
-.container-menu a:hover {
-    color: $color-two;
-  }
-
-  /* Header */
-
-.page-title a {
-    color: $color-two;
-    font-family: 'Great Vibes', cursive;
-    position: absolute;
-    overflow: hidden;
-    margin-left: 30%;
-    margin-top: 65px;
-    font-size: 30px;
-    text-decoration: none;
-  }
-  
-.splash {
-    min-height: 500px;
-    display: flex;
-    border-radius: 3px;
-    background-color: rgb(0, 0, 0);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-  }
-
-.splash .splash-inner {
-    margin: auto;
-    max-width: auto; 
-  }
-
-.background-image {
-  background-image: url("/images/Background\ Image.png");
-  height: 100vh;
+  width: 100%;
   position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1400px;
-  height: 881px;
-  z-index: 100;
-)
-  
-.splash .splash-inner .page-subtitle {
-    padding: 0;
-    font-weight: 900;
-    font-family: 'Work Sans', sans-serif;
-    color: $color-one;
-    font-size: 86px;
-    text-align: center;
+
+  .row {
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .logo {
+      text-transform: capitalize;
+      font-family: $font-logo;
+      font-size: 38px;
+      font-style: italic;
+      color: $color-primary;
+      text-align: center;
+      padding-right: 90px;
+    }
+
+    ul {
+      list-style-type: none;
+      text-align: center;
+      padding: 0;
+
+      li {
+        margin: 50px 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: $navfont;
+        font-weight: 500;
+
+        a {
+          text-decoration: none;
+          color: $color-font-one;
+        }
+
+        a:hover {
+          color: $color-primary;
+        }
+      }
+    }
   }
-  
-.splash .splash-inner .page-title {
-    padding-top: 80px;
-    color: $color-one;
-    font-size: 44px;
-    font-style: italic;
-    font-weight: lighter;
-    text-align: center;
-  }
-
-  /* Buttons */
-
-.btn {
-    color: $color-one;
-    background: $color-two;
-    padding: 35px;
-    margin: 24px 500px 0;
-    display: inline-block;
-    font-size: 24px;
-    text-align: center;
-    text-decoration: none;
-    min-width: 270px;
-
-  }
-
-  /* Services */
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 26%;
-    margin-right: 26%;
-  }
-  
-.text-box {
-    padding-bottom: -100%;
-    position: relative;
-    flex: 0 0 31%; }
-    .text-box.text-box p:first-of-type {
-      font-weight: bold; 
-  }
-  
-.wrapper p {
-    font-weight: lighter;
-    font-size: 16px;
-    color: $color-three;
-    text-align: center;
-  }
-
-.wrapper h3 {
-    padding-top: 20px;
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-  }
-
-.wrapper i {
-    font-size: 50px;
-    color: $color-two;
-    border: 5px solid $color-two;
-    background-color: $color-one;
-    height: 100px;
-    -moz-border-radius:50px;
-    -webkit-border-radius: 50px;
-    width: 100px;
-    padding-top: 20px;
-    text-align: center;
-  }
-
-  .wrapper {
-    text-align: center;
-    margin-top: 100px;
-  }
-
-.services-title {
-    margin-top: 50px;
-    font-style: bold;
-    font-size: 40px;
-    font-family: 'Work Sans', sans-serif;
-    color: $color-four;
-    text-align: center;
-  }
-
-.services-subtitle {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 20px;
-    font-weight: lighter;
-    color: $color-four;
-    font-style: italic;
-    text-align: center;
-  }
-
-  .services {
-    margin-bottom: 100px;
-    height: 50vh;
-  }
-
-  /* Portfolio */
-
-.portfolio {
-  background-color: $color-five;
-  margin-bottom: 100px;
-  height: 120vh;
-  
 }
 
-.portfolio-title {
-    padding-top: 200px;
-    font-style: bold;
-    font-size: 40px;
-    font-family: 'Work Sans', sans-serif;
-    color: $color-four;
+/* Splash */
+
+.splash {
+  background-image: url('/images/Background\ Image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  display: flex;
+  text-align: center;
+  color: $color-font-one;
+
+  .splash-inner {
+      margin: auto;
+      max-width: 70%;
+
+      .page-subtitle {
+        font-family: $navfont;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 60px;
+        margin-top: 10px;
+      }
+
+      .page-title {
+        font-family: $textfont-one;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 38px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        display: inline-block;
+        max-width: 250px;
+        margin: 25px auto 0;
+        padding: 20px 40px;
+        border-radius: 3px;
+        color: $color-font-one;
+        font-family: $navfont;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: $color-primary;
+      }
+  }
+}
+
+/* Service*/
+
+section {
+  color: $color-font-two;
+
+  .section-header {
     text-align: center;
+    margin: 60px 0 60px;
+    padding-top: 40px;
+
+    .section-title {
+      font-family: $navfont;
+      text-transform: uppercase;
+      font-size: 36px;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 18px;
+      font-style: italic;
+      margin-top: 5px;
+      color: $color-font-two;
+    }
   }
 
-.portfolio-subtitle {
-    font-size: 20px;
-    font-weight: lighter;
-    color: $color-four;
-    font-style: italic;
+  .container {
     text-align: center;
+
+    .row {
+
+      i {
+        color: $color-primary;
+        font-size: 50px;
+        border: 5px solid $color-primary;
+        background-color: $color-font-one;
+        height: 100px;
+        -moz-border-radius:50px;
+        -webkit-border-radius: 50px;
+        width: 100px;
+        padding-top: 20px;
+        text-align: center;
+      }
+
+      p {
+        color: $color-font-two;
+        font-family: $textfont-one;
+      }
+
+      .container-title {
+        font-family: $navfont;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+
+/* Our portfolio */
+
+.our-portfolio {
+  background-color: $color-background-main;
+
+  .row {
+    max-width: 1000px;
+    margin: auto 70px;
+    align-content: space-between;
+    padding-bottom: 100px;
+
+    .card {
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+
+      .card-img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+
+      }
+      .card-body {
+        background-color: $color-font-one;
+
+        .card-title {
+          font-size: 20px;
+          margin-bottom: 0;
+          margin-top: 5px;
+          padding-top: 25px;
+        }
+
+        .card-text {
+          font-size: 16px;
+          margin-top: 0;
+          margin-bottom: 5px;
+          padding-bottom: 25px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+
+.footer {
+  padding: 30px 0 30px 0;
+  text-align: center;
+  margin: auto 70px;
+
+  p {
+    color: $color-font-two;
   }
 
-.card-group img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-  }
-
-.card-title {
-    font-size: 25px;
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    margin-top: 10px;
-  }
-
-.card-text {
-    font-size: 20px;
-    font-weight: lighter;
-    color: $color-three;
-    font-style: italic;
-    margin-top: -35px;
-    text-align: center;
-  }
-
-  .card-body {
-    border: 0px $color-two;
-    background-color: $color-one;
-    box-sizing: border-box;
-    height: -100px;
-    padding: 30px;
-  }
-
-  /* Footer */
-  
-footer {
-    margin: 44px 0; 
-  }
-
-footer ul {
+  .list-inline {
     margin: 0 auto;
     padding: 0;
-    text-align: center; 
-  }
-  
-footer ul li {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    background-color: $color-four;
-    border-radius: 50%;
-    line-height: 60px;
-  }
-        
-footer ul li a {
-    font-size: 30px;
-    color: $color-one;
-  }
+    word-spacing: 6px;
 
-  /* Media */
-
-@media only screen and (max-width: 960px) {
-
-    .wrapper {
-        flex-direction: column; 
+    .list-inline-item {
+      display: inline-block;
+      font-size: 18px;
+      width: 40px;
+      height: 40px;
+      background-color: $color-primary;
+      color: $color-font-one;
+      border-radius: 50%;
+      line-height: 40px;
     }
-} 
+  }
+}
+
+/* Media */
+
+@media (max-width: 767px) {
+
+  .navigation {
+
+    .row {
+      flex-wrap: wrap;
+      div:first-child {
+      order: 1;
+
+        .logo {
+        text-align: left;
+        }
+      }
+
+      ul {
+        display: flex;
+
+        li {
+          flex: 1;
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  }
+
+  .splash {
+
+    .page-subtitle{
+      display: none;
+    }
+  }
+
+  .margin-b {
+    margin-bottom: 18px;
+  }
+
+  .footer {
+
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (max-width: 395px) {
+  .footer {
+    margin: 0;
+    font-size: 12px;
+  }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .our-portfolio {
+
+    .container {
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 466px) {
+  .our-portfolio {
+
+    .container {
+        padding: 0;
+    }
+  }
+}
