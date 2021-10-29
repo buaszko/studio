@@ -1,9 +1,13 @@
 /* Variables */
  $color-one: #ffffff;
  $color-two: #fed136;
- $color-three: #38ada9;
- $color-four: #3d3d3d;
- $color-five: #f1f2f6;
+ $color-three: #777777;
+ $color-four: #272727;
+ $color-five: #F7F7F7;
+ $font-one: 'Montserrat', sans-serif;
+ $font-two: 'PT Serif', serif;
+ $font-three: 'Roboto Slab', serif; 
+
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -68,18 +72,29 @@
 .splash {
     min-height: 500px;
     display: flex;
-    background-image: url("https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1174&q=80");
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
-    margin-top: 0;
   }
 
 .splash .splash-inner {
     margin: auto;
     max-width: auto; 
   }
+
+.background-image {
+  background-image: url("/images/Background\ Image.png");
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1400px;
+  height: 881px;
+  z-index: 100;
+)
   
 .splash .splash-inner .page-subtitle {
     padding: 0;
