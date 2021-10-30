@@ -1,14 +1,14 @@
 $font-logo: 'Carattere', cursive;
-$textfont-one: 'Merriweather', serif;
+$textfont-one: 'Montserrat', sans-serif;
 $navfont: 'Roboto', sans-serif;
 $textfont-two: 'Roboto Mono', monospace;
-
 
 $color-primary: #FED136;
 $color-font-one: #FFF;
 $color-background-main: #eff2f5;
-$color-background: #7F7978;
+$color-background: #F7F7F7;
 $color-font-two: #111;
+$color-font-three: #5E5E5E;
 
 /* Global */
 
@@ -91,18 +91,22 @@ p {
       .page-subtitle {
         font-family: $navfont;
         text-transform: uppercase;
-        font-weight: 500;
-        font-size: 60px;
+        font-size: 75px;
         margin-top: 10px;
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
       }
 
       .page-title {
         font-family: $textfont-one;
         font-weight: 300;
         font-style: italic;
-        font-size: 38px;
+        font-size: 40px;
         text-transform: capitalize;
         margin-bottom: 10px;
+        line-height: 1.2;
+        text-align: center;
       }
 
       .btn {
@@ -145,7 +149,10 @@ section {
       font-size: 18px;
       font-style: italic;
       margin-top: 5px;
-      color: $color-font-two;
+      color: $color-font-three;
+      font-family: $navfont;
+      line-height: 1.2;
+
     }
   }
 
@@ -169,12 +176,16 @@ section {
 
       p {
         color: $color-font-two;
-        font-family: $textfont-one;
+        font-family: $navfont;
+        font-size: 14px;
+        text-align: center;
+        font-style: italic;
       }
 
       .container-title {
         font-family: $navfont;
         font-size: 1.2em;
+        font-style: bold;
       }
     }
   }
@@ -226,32 +237,30 @@ section {
 
 /* Footer */
 
-.footer {
+footer {
   padding: 30px 0 30px 0;
   text-align: center;
   margin: auto 70px;
 
-  p {
-    color: $color-font-two;
-  }
+  ul li  {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: $color-font-two;
+    border-radius: 50%;
+    line-height: 60px;
 
-  .list-inline {
-    margin: 0 auto;
-    padding: 0;
-    word-spacing: 6px;
-
-    .list-inline-item {
-      display: inline-block;
-      font-size: 18px;
-      width: 40px;
-      height: 40px;
-      background-color: $color-primary;
+    a {
+      font-size: 30px;
       color: $color-font-one;
-      border-radius: 50%;
-      line-height: 40px;
     }
   }
 }
+
+.footer-text {
+  color: $color-font-one;
+}
+
 
 /* Media */
 
@@ -281,7 +290,6 @@ section {
   }
 
   .splash {
-
     .page-subtitle{
       display: none;
     }
@@ -304,13 +312,10 @@ section {
     margin: 0;
     font-size: 12px;
   }
-
-
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
   .our-portfolio {
-
     .container {
       max-width: 100%;
     }
@@ -318,7 +323,6 @@ section {
 }
 @media (max-width: 466px) {
   .our-portfolio {
-
     .container {
         padding: 0;
     }
