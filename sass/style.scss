@@ -3,7 +3,7 @@ $textfont-one: 'Montserrat', sans-serif;
 $navfont: 'Roboto', sans-serif;
 $textfont-two: 'Roboto Mono', monospace;
 
-$color-primary: #FED136;
+$color-gold: #FED136;
 $color-font-one: #FFF;
 $color-background-main: #eff2f5;
 $color-background: #F7F7F7;
@@ -41,7 +41,7 @@ p {
       font-family: $font-logo;
       font-size: 38px;
       font-style: italic;
-      color: $color-primary;
+      color: $color-gold;
       text-align: center;
       padding-right: 90px;
     }
@@ -65,7 +65,7 @@ p {
         }
 
         a:hover {
-          color: $color-primary;
+          color: $color-gold;
         }
       }
     }
@@ -123,7 +123,7 @@ p {
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-        background-color: $color-primary;
+        background-color: $color-gold;
       }
   }
 }
@@ -163,9 +163,9 @@ section {
     .row {
 
       i {
-        color: $color-primary;
+        color: $color-gold;
         font-size: 50px;
-        border: 5px solid $color-primary;
+        border: 5px solid $color-gold;
         background-color: $color-font-one;
         height: 100px;
         -moz-border-radius:50px;
