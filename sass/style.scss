@@ -141,8 +141,9 @@ section {
     .section-title {
       font-family: $navfont;
       text-transform: uppercase;
-      font-size: 36px;
+      font-size: 46px;
       margin-bottom: 0;
+      font-style: bold;
     }
 
     p {
@@ -257,10 +258,6 @@ footer {
   }
 }
 
-.footer-text {
-  color: $color-font-one;
-}
-
 
 /* Media */
 
@@ -274,7 +271,7 @@ footer {
       order: 1;
 
         .logo {
-        text-align: left;
+        margin-left: 85px;
         }
       }
 
