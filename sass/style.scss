@@ -262,17 +262,10 @@ footer {
 
 /* Media */
 
-@media (max-width: 395px) {
-  .footer {
-    margin: 0;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 466px) {
+@media (min-width: 576px) and (max-width: 991px) {
   .our-portfolio {
     .container {
-        padding: 0;
+      max-width: 100%;
     }
   }
 }
@@ -296,6 +289,8 @@ footer {
         li {
           flex: 1;
           flex-wrap: nowrap;
+          margin-right: 70%;
+          margin-top: 10px;
         }
       }
     }
@@ -312,17 +307,24 @@ footer {
   }
 
   .footer {
-
     .row {
       flex-direction: column-reverse;
     }
   }
 }
 
-@media (min-width: 576px) and (max-width: 991px) {
+@media (max-width: 466px) {
   .our-portfolio {
     .container {
-      max-width: 100%;
+        padding: 0;
     }
+  }
+}
+
+@media (max-width: 395px) {
+  footer {
+    padding-right: 40px;
+    margin: 0 30px;
+    font-size: 12px;
   }
 }
